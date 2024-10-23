@@ -1,10 +1,25 @@
 {
-  "name": "xspace",
+  "name": "@parkingX",
   "version": "1.0.0",
   "description": "",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "format": "prettier \"{apps,libs}/**/*.{ts,tsx,js,json}\" --ignore-path .gitignore",
+    "format:check": "pnpm format --check",
+    "format:write": "pnpm format --write",
+    "tsc": "pnpm --parallel -r run tsc",
+    "lint": "pnpm --parallel -r run lint",
+    "validate": "pnpm format:write && pnpm tsc && pnpm lint",
+    "prepare": "husky install"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "husky": "^8.0.0"
+  },
+  "dependencies": {
+    "prettier": "^3.0.0"
+  }
 }

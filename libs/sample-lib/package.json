@@ -1,0 +1,20 @@
+{
+  "name": "@parkingX/sample-lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "tsc": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/eslint": "^9.6.1",
+    "@types/eslint-scope": "^3.7.7",
+    "@types/node": "^22.7.7",
+    "@types/react": "^18",
+    "@types/react-dom": "^18"
+  }
+}
